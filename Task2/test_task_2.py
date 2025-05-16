@@ -34,7 +34,7 @@ class ProgressBarPage:
 
     def reload_page(self):
         self.page.reload()
-        # Reasignación no necesaria; se usa lambda para obtener el botón actualizado
+        
 
     def expect_start_button(self):
         expect(self.start_button()).to_have_text("Start")
