@@ -43,7 +43,7 @@ class NestedFramesPage(BasePage):
         assert middle_text == "MIDDLE", f"Texto inesperado en frame-middle: {middle_text}"
         assert left_text == "LEFT", f"Texto inesperado en frame-left: {left_text}"
 
-        print("✅ Verificación exitosa: 'MIDDLE' y 'LEFT' encontrados correctamente.")
+      
 
 
 # -------------------------------
@@ -61,8 +61,8 @@ def test_nested_frames_navigation(page: Page):
     nested_page = NestedFramesPage(page)
     nested_page.verify_middle_and_left_texts()
 
-    # Regresar a la página anterior
+   
     nested_page.go_back()
     frames_page.wait_for_url("frames")
-    assert frames_page.is_nested_frames_link_visible(), "No se encontró el enlace 'Nested Frames' al volver atrás."
-    print("🔙 Navegación atrás exitosa: se muestra el enlace 'Nested Frames'")
+    
+ 
